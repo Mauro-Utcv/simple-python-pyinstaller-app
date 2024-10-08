@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'python:3.11.5-alpine3.18'
-      args 'sh \'python -m py_compile sources/add2vals.py sources/calc.py\''
+      args 'python -m py_compile sources/add2vals.py sources/calc.py'
     }
 
   }
